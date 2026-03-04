@@ -24,7 +24,7 @@ export default function RootLayout({
         {/* Your Header with the safe-area-inset calculation */}
         <header
           style={{
-            paddingTop: "env(safe-area-inset-top, 55px)",
+            paddingTop: "max(env(safe-area-inset-top), 55px)", // fallback
             paddingBottom: "10px",
             paddingLeft: "20px",
             paddingRight: "20px",
